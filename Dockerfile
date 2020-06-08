@@ -10,7 +10,7 @@
 # last modified:
 #     2019-05-20 - First Commit
 #     2019-06-08 - Manage logs
-#     2019-11-03 - Change install with source and update to 3.9.2
+#     2019-11-03 - Change install with source and update to 4.1.1
 #	    2019-11-08 - Add docker compose with nginx and custom macvlan
 #
 #-------------------------------------------------------
@@ -28,7 +28,7 @@ RUN apt-get update && apt-get full-upgrade -y \
 # Install WeewX #
 #################
 
-RUN cd /tmp && wget http://weewx.com/downloads/weewx-3.9.2.tar.gz && tar xvfz weewx-3.9.2.tar.gz && cd weewx-3.9.2 && ./setup.py build && ./setup.py install --no-prompt
+RUN cd /tmp && wget http://weewx.com/downloads/weewx-4.1.1.tar.gz && tar xvfz weewx-4.1.1.tar.gz && cd weewx-4.1.1 && ./setup.py build && ./setup.py install --no-prompt
 
 ###################################
 # Download and Install Extentions #
